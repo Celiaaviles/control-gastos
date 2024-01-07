@@ -1,9 +1,7 @@
+import Header from "./components/header";
+
 function App() {
-  return (
-    <>
-      <h1>Control de Gastos</h1>
-    </>
-  );
+  return <Header></Header>;
 }
 
 export default App;
