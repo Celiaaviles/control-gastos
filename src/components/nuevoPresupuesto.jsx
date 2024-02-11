@@ -2,11 +2,11 @@
 import { useState } from "react";
 import Mensaje from "./Mensaje";
 
-export default function NuevoPresupuesto({
+const NuevoPresupuesto = ({
   presupuesto,
   setPresupuesto,
   setIsValidPresupuesto,
-}) {
+}) => {
   const [mensaje, setMensaje] = useState("");
 
   const handlePresupuesto = (e) => {
@@ -41,4 +41,6 @@ export default function NuevoPresupuesto({
       </form>
     </div>
   );
-}
+};
+
+export default NuevoPresupuesto;
